@@ -1,7 +1,7 @@
 # test_002
 
-* Код класса ProcessController
-* Лог-пример успешной работы класса
+* [Код класса ProcessController](https://github.com/TuxFD/test_002/blob/master/controller.py)
+* [Лог-пример успешной работы класса](https://github.com/TuxFD/test_002/blob/master/log_example.log)
 
 
 Тестовое задание. Параллельный запуск процессов.  Применение Multiprocessing.
