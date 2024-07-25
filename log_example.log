@@ -1,41 +1,41 @@
 QUEUE CREATED. SIZE: 5
 QUEUE ELEMENTs:
-(<function custom_1 at 0x7ffad556bd90>, [2, 2])
-(<function custom_2 at 0x7ffad54320e0>, [2, 2])
-(<function custom_3 at 0x7ffad534f490>, [2, 2])
-(<function custom_4 at 0x7ffad534f520>, [2, 2])
-(<function custom_5 at 0x7ffad534f5b0>, [2, 2])
+(<function custom_1 at 0x7f2086b9fd90>, [2, 2, 2])
+(<function custom_2 at 0x7f2086a660e0>, [2, 2])
+(<function custom_3 at 0x7f2086983490>, [2])
+(<function custom_4 at 0x7f2086983520>, [])
+(<function custom_5 at 0x7f20869835b0>, [2, 2])
 
 
 LIMITED QUEUE CREATED. SIZE: 2
 LIMITED QUEUE ELEMENTs:
-(<function custom_1 at 0x7ffad556bd90>, [2, 2])
-(<function custom_2 at 0x7ffad54320e0>, [2, 2])
+(<function custom_1 at 0x7f2086b9fd90>, [2, 2, 2])
+(<function custom_2 at 0x7f2086a660e0>, [2, 2])
 
-TASK IN PROCESS: (<function custom_1 at 0x7ffad556bd90>, [2, 2]) ALIVE COUNT:  1
-TASK IN PROCESS: (<function custom_2 at 0x7ffad54320e0>, [2, 2]) ALIVE COUNT:  0
+TASK IN PROCESS: (<function custom_1 at 0x7f2086b9fd90>, [2, 2, 2]) ALIVE COUNT:  1
+TASK IN PROCESS: (<function custom_2 at 0x7f2086a660e0>, [2, 2]) ALIVE COUNT:  0
 DONE!
 
 
 LIMITED QUEUE CREATED. SIZE: 2
 LIMITED QUEUE ELEMENTs:
-(<function custom_3 at 0x7ffad534f490>, [2, 2])
-(<function custom_4 at 0x7ffad534f520>, [2, 2])
+(<function custom_3 at 0x7f2086983490>, [2])
+(<function custom_4 at 0x7f2086983520>, [])
 
-TASK IN PROCESS: (<function custom_3 at 0x7ffad534f490>, [2, 2]) ALIVE COUNT:  1
-TASK IN PROCESS: (<function custom_4 at 0x7ffad534f520>, [2, 2]) ALIVE COUNT:  0
+TASK IN PROCESS: (<function custom_3 at 0x7f2086983490>, [2]) ALIVE COUNT:  1
+TASK IN PROCESS: (<function custom_4 at 0x7f2086983520>, []) ALIVE COUNT:  0
 DONE!
 
 
 LIMITED QUEUE CREATED. SIZE: 1
 LIMITED QUEUE ELEMENTs:
-(<function custom_5 at 0x7ffad534f5b0>, [2, 2])
+(<function custom_5 at 0x7f20869835b0>, [2, 2])
 
-TASK IN PROCESS: (<function custom_5 at 0x7ffad534f5b0>, [2, 2]) ALIVE COUNT:  0
+TASK IN PROCESS: (<function custom_5 at 0x7f20869835b0>, [2, 2]) ALIVE COUNT:  0
 DONE!
 
 QUEUE EMPTY! RESULTs:
 custom_1 returned 
 custom_2 returned 
 custom_3 returned 
-PROCESSES TIMED OUT: 149
+PROCESSES TIMED OUT: 153
