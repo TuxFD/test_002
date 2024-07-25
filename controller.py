@@ -6,10 +6,10 @@ class ProcessController:
     def __init__(self) -> None:
         self.all_tasks = Queue()
         self.run_tasks = Queue()
-        self.timeout_tasks = int(0)
         self.done_tasks = Queue()
         self.proc = []
         self.proc_timer = {}
+        self.proc_timeout = int(0)
         self.limit = 0
 
     # def wait(self):
@@ -90,7 +90,7 @@ class ProcessController:
                                     p_started = self.proc_timer[p.name]
                                     if time.time() - p_started - 1 < max_exec_time:
                                         p.terminate()
-                                        self.timeout_tasks += 1
+                                        self.proc_timedout += 1
 
                         except Exception as e:
                             print()
@@ -108,7 +108,7 @@ class ProcessController:
                 print("QUEUE EMPTY! RESULTs:")
                 while not self.done_tasks.empty():
                     print(self.done_tasks.get())
-                print("PROCESSES TIMED OUT:", self.timeout_tasks)
+                print("PROCESSES TIMED OUT:", self.proc_timedout)
 
         except Exception as e:
             print()
